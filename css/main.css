@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Hidden Class for Proper Document Outline */
+.hidden {
+   display: none;
+}
+
+/* All Columns */
+
+.siteContainer {
+   width: 100%;
+   max-width: 1140px;
+   margin: 0 auto;
+   display: block;
+}
+
+.column {
+   width: 100%;
+   height: 200px;
+   display: block;
+   float: left; /* Fixes issue of spacing around divs */
+}
+
+.column_1 {
+   background-color: pink;
+}
+
+.column_2 {
+   background-color: red;
+}
+
+.column_3 {
+   display: none;
+}
+
+.column_4 {
+   display: none;
+}
+
+/* All Columns */
+
+@media screen and (min-width: 641px) {
+.column {
+   width: 25%;
+   display: inline-block;
+   height: 200px;
+}
+
+.column_1 {
+   background-color: blue;
+}
+
+.column_2 {
+   background-color: purple;
+}
+
+.column_3 {
+   background-color: grey;
+   display: inline-block;
+}
+
+.column_4 {
+   background-color: SaddleBrown; /* "Brown" in css looks like red so SaddleBrown is a more clear */
+   display: inline-block;
+}
+
+}
